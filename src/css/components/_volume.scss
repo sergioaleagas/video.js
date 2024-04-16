@@ -58,6 +58,7 @@
     @include transition($transition-property);
   }
 
+  //New Style during transition on Volumen Control Hover
   &.vjs-volume-panel-horizontal {
     &.vjs-hover,
     &:active,
@@ -65,6 +66,9 @@
       width: 10em;
 
       @include transition(width 0.1s);
+      //Center align item
+      align-items: center;
+
     }
     &.vjs-mute-toggle-only {
       width: 4em;
@@ -88,8 +92,11 @@
   @include transition($transition-property)
 }
 
+//New Style before transition on Volumen Control slider
 .video-js .vjs-volume-panel {
   @include display-flex;
+  //Center align item
+  align-items: center;
 }
 
 .video-js .vjs-volume-bar {
@@ -144,9 +151,11 @@
 .vjs-volume-level .vjs-svg-icon {
   position: absolute;
   width: 0.9em;
-  height: 0.9em;
+  height: 0.7em;
   pointer-events: none;
   z-index: 1;
+  fill: white;
+  place-items: baseline;
 }
 
 .vjs-slider-horizontal .vjs-volume-level {
@@ -211,7 +220,8 @@
   padding: 6px 8px 8px 8px;
   pointer-events: none;
   position: absolute;
-  top: -3.4em;
+  /*top: -3.4em;*/
+  top: -5.4em;
   visibility: hidden;
   z-index: 1;
 }

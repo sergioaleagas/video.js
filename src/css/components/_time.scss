@@ -9,11 +9,31 @@
 }
 
 .vjs-live .vjs-time-control,
-.vjs-live .vjs-time-divider,
-.video-js .vjs-current-time,
-.video-js .vjs-duration {
+.vjs-live .vjs-time-divider {
   display: none;
 }
+
+//New Style for Current time controls duration and current-time
+.video-js .vjs-duration {
+  /* display: none; */
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -2.5em;
+}
+
+.video-js .vjs-current-time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2.5em;
+}
+
+.video-js .vjs-remaining-time {
+  display: none;
+}
+
+//End of New Styles
 
 .vjs-time-divider {
   display: none;

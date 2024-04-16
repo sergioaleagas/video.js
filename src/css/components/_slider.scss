@@ -6,7 +6,11 @@
 
   @include user-select(none);
 
-  @include background-color-with-alpha($secondary-background-color, $secondary-background-transparency);
+  /*@include background-color-with-alpha($secondary-background-color, $secondary-background-transparency);*/
+  //New Style for load progress bar, background color
+  background: #3a3a3a;
+  background: rgba(46, 46, 46, 0.5);
+  border-radius: 1em;
  }
 
 .video-js .vjs-slider.disabled {

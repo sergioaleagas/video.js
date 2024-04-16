@@ -1,3 +1,11 @@
+/*
+Old Style
 .video-js .vjs-custom-control-spacer {
   display: none;
+}
+*/
+
+//New Style for Control Spacer
+.video-js .vjs-custom-control-spacer {
+  flex:1;
 }

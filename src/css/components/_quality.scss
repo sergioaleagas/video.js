@@ -1,0 +1,48 @@
+.video-js .vjs-quality-selector {
+  cursor: pointer;
+  @include flex(none);
+
+  & .vjs-icon-placeholder {
+    @extend .vjs-icon-hd;
+  }
+}
+button.vjs-quality-selector.vjs-control.vjs-button .vjs-svg-icon {
+   stroke-width: 1px;
+}
+/*
+.video-js .vjs-quality-selector {
+  .vjs-menu-button {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+  }
+  .video-js .vjs-quality-selector .vjs-icon-placeholder {
+     // From video.js font: https://github.com/videojs/font
+     // stylelint-disable-next-line font-family-no-missing-generic-family-keyword
+     font-family: 'VideoJS';
+     font-weight: normal;
+     font-style: normal;
+     &::before {
+        // The correct icon font character for Video.js 7 and below:
+        .video-js:not(.vjs-v8) & {
+           content: '\f110';
+        }
+        // Icon font character for Video.js 8:
+        .vjs-v8 & {
+           content: '\f114';
+        }
+     }
+  }
+}
+
+.video-js .vjs-quality-selector {
+  .vjs-big-play-button {
+     display: none;
+  }
+  .vjs-control-bar {
+     display: flex;
+     visibility: visible;
+     opacity: 1;
+  }
+}*/

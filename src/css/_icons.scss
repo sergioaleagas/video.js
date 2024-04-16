@@ -11,9 +11,13 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  fill: currentColor;
-  height: 1.8em;
-  width: 1.8em;
+  /* New Fill mode and color for svg icons */
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  height: 2.5em;
+  width: 2.5em;
+  vertical-align: middle;
 
   // Overwrite any font content
   &:before {

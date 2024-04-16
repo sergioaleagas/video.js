@@ -25,6 +25,7 @@ import './text-track-controls/subs-caps-button.js';
 import './audio-track-controls/audio-track-button.js';
 import './playback-rate-menu/playback-rate-menu-button.js';
 import './spacer-controls/custom-control-spacer.js';
+import './quality-toggle.js';
 
 /**
  * Container of main controls.
@@ -71,9 +72,11 @@ ControlBar.prototype.options_ = {
     'chaptersButton',
     'descriptionsButton',
     'subsCapsButton',
+    'qualityToggle',
     'audioTrackButton',
     'pictureInPictureToggle',
     'fullscreenToggle'
+
   ]
 };
 

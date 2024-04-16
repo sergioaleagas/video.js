@@ -1,3 +1,39 @@
+
+/* Show the controls (hidden at the start by default) */
+.video-js .vjs-control-bar { 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// New style for Control Bar BackGround, no need to
+/* Control Bar New Position and BackgroundColor */
+.video-js .vjs-control-bar {
+  /*background-color: rgba(38, 38, 38, 0.9);*/
+  position: absolute;
+  width: auto;
+  left: 1em;
+  right: 1em;
+  bottom: 2em;
+  border-radius: 0.5em;
+  align-items: center;
+  display: none;
+}
+
+.video-js .vjs-control-bar:hover .vjs-progress-control {
+  opacity: 1;
+  top: -2.5em;
+}
+
+.video-js .vjs-control-bar .vjs-menu {
+  z-index: 2;
+  height: 100%;
+}
+
+/*
+Old Position
+
 .video-js .vjs-control-bar {
   display: none;
   width: 100%;
@@ -9,7 +45,7 @@
 
   @include background-color-with-alpha($primary-background-color, $primary-background-transparency);
 }
-
+*/
 // Locks the display only if:
 //  - controls are not disabled
 //  - native controls are not used
@@ -19,11 +55,13 @@
 }
 
 // Video has started playing or we are in audioOnlyMode
+//New style for control bar, opacity
 .vjs-has-started .vjs-control-bar,
 .vjs-audio-only-mode .vjs-control-bar {
   @include display-flex;
   visibility: visible;
-  opacity: 1;
+  //opacity: 1;
+  opacity: 0.8;
 
   $trans: visibility 0.1s, opacity 0.1s; // Var needed because of comma
   @include transition($trans);
